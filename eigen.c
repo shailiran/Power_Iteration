@@ -12,7 +12,6 @@ void power_iteration(double *input_vector,FILE *file, double *eigen_vector, doub
                      double *prev_vector, double *numerator_vector);
 void write_vector_to_file(char *output_filename, double *eigen_vector, int n);
 
-
 double EPSILON = 0.00001;
 
 int main(int argc, char* argv[]) {
@@ -196,5 +195,4 @@ void write_vector_to_file(char *output_filename, double *eigen_vector, int n) {
     assert(m == n);
 
     fclose(file);
-
 }
